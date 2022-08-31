@@ -11,7 +11,7 @@ const Footer = () => {
                rel="noreferrer"
                ><div className="footer-img-container">
                    <img src={codeLink} alt="footer-img" className="footer-img" />
-                   <div className="overlay">Watch the Code</div>
+                   <div className="overlay">Watch the Code !</div>
                 </div>
             </a>
         </div>
