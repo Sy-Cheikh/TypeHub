@@ -2,14 +2,33 @@ import React from "react";
 import TryAgain from "../TryAgain/TryAgain";
 import TypingChallengeContainer from "../TypingChallengeContainer/TypingChallengeContainer";
 import './TestContainer.css'
-const TestContainer = ({words, characters, wpm}) => {
-    const timeRemaining = 30;
+const TestContainer = ({
+         words, 
+         characters, 
+         wpm,
+         selectedParagraph,
+         timeRemaining,
+         timeStarted,
+         testInfo,
+         handleUserInput
+    }) => {
+    
     return ( 
         <div className="test-container">
             {
                 timeRemaining > 0 ? (
                     <div data-aos="fade-up" className="typing-challenge-container">
-                        <TypingChallengeContainer words={words} characters={characters} wpm={wpm}/>
+                        <TypingChallengeContainer 
+                        
+                                selectedParagraph={selectedParagraph} 
+                                timeStarted={timeStarted} 
+                                timeRemaining={timeRemaining} 
+                                words={words} 
+                                characters={characters} 
+                                wpm={wpm}
+                                testInfo={testInfo}
+                                handleUserInput={handleUserInput}
+                       />
                    </div>
                 ) : (
                      <div className="try-again-cont">

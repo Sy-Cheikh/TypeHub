@@ -4,7 +4,16 @@ import TypingChallenge from "../TypingChallenge/TypingChallenge";
 import './TypingChallengeContainer.css';
 
 
-const TypingChallengeContainer = ({words, characters, wpm}) => {
+const TypingChallengeContainer = ({
+      words, 
+      characters, 
+      wpm,
+      selectedParagraph,
+      timeRemaining,
+      timeStarted,
+      testInfo,
+      handleUserInput
+ }) => {
     return ( 
         <div className="typing-challenge-container">
              {/*  Details Section */}
@@ -23,7 +32,13 @@ const TypingChallengeContainer = ({words, characters, wpm}) => {
              
              {/* The real Chall */}
              <div className="typewriter-container">
-                <TypingChallenge selectedParagraph="Lorem, ipsum."/>
+                <TypingChallenge 
+                     selectedParagraph={selectedParagraph} 
+                     timeRemaining={timeRemaining} 
+                     timeStarted={timeStarted}
+                     testInfo={testInfo}
+                     handleUserInput={handleUserInput}
+                />
              </div>
         </div>
      );
