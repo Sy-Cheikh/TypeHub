@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from "../NavBar/NavBar";
 import LandingPage from "../LandingPage/LandingPage";
 import Footer from "../Footer/Footer";
+import ChallengeSection from "../ChallengeSection/ChallengeSection";
 class App extends React.Component {
     render(){
         return(
@@ -12,7 +13,7 @@ class App extends React.Component {
                 {/* Landing Page */}
                 <LandingPage/>
                 {/* Challenge section */}
-
+                <ChallengeSection/>
                 {/* Footer */}
                 <Footer/>
             </div>
