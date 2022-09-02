@@ -5,15 +5,14 @@
     justify-content: center;
     flex-grow: 1;
     padding:10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.26);
+    box-shadow:0 1px 3px rgb(28, 30, 56);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
 .details-card-container:hover{
-   
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.26);
-    background-color: #FFFF99;
+
+    box-shadow: 0 1px 30px rgb(230, 230, 61);
 }
 
 .card-name{

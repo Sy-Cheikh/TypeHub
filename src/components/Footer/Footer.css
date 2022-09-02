@@ -4,7 +4,7 @@
     background: #1d2020;
     margin: 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.26);
-     z-index: 99;
+    z-index: 99;
 }
 
 .footer-link{
@@ -31,4 +31,15 @@
 
 .footer-img-container:hover .overlay{
 opacity: 2;
+}
+
+.infos-content p{
+    font-family: "Bangers", cursive;
+    color: #e7e6e7;
+    font-size: 20px;
+}
+.linkdin{
+    height: 24px;
+    margin-left: 20px;
+    margin-top: 5px;
 }

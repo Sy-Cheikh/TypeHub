@@ -4,7 +4,7 @@ import refresh from './../../assets/refresh.png';
 import facebook from './../../assets/facebook.png';
 import twitter from './../../assets/twitter-2.png';
 
-const TryAgain = ({words, characters, wpm}) => {
+const TryAgain = ({words, characters, wpm, startAgain}) => {
     return ( 
             <div className="try-again-container">
                   <h1>Test Results</h1>
@@ -23,7 +23,7 @@ const TryAgain = ({words, characters, wpm}) => {
                   </div>
 
                   <div>
-                        <button className="end-buttons start-again-btn">
+                        <button onClick={() =>  startAgain()} className="end-buttons start-again-btn">
                             <img src={refresh} alt="" className="refresh-img" />
                         </button>
 
