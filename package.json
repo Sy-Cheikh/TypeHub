@@ -3,7 +3,7 @@
   "name": "typehub",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Sy-Cheikh.github.io/TypeHub",
+ 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
