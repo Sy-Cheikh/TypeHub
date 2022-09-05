@@ -25,7 +25,7 @@ class App extends React.Component {
     fetchNewParagraphFallBack = () => {
         const data = SAMPLE_PARAGRAPHS[
             Math.floor(Math.random() * SAMPLE_PARAGRAPHS.length)
-        ]
+        ];
         const selectedParagraphArray = data.split("");
         const testInfo = selectedParagraphArray.map((selectedLetter) => {
             return{
@@ -35,7 +35,7 @@ class App extends React.Component {
         });
 
         this.setState({...DefaultState ,testInfo:testInfo, selectedParagraph:data});
-    }
+    };
     fetchNewParagraph = () =>{
         fetch(serviceUrl)
             .then(response => response.text())
@@ -54,7 +54,7 @@ class App extends React.Component {
 
     componentDidMount(){
       
-       this.fetchNewParagraph();
+       this.fetchNewParagraphFallBack();
         
     };
 
